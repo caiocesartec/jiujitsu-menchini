@@ -1,0 +1,13 @@
+.headerMain {
+    background-color: black;    
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+.logoContainer {
+    position: absolute;
+}
+.logo {
+    background-color: transparent;
+} 
