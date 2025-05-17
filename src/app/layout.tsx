@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${anton.variable}`}>
+      <body className={anton.className}>
         <Header/>
         {children}
       </body>

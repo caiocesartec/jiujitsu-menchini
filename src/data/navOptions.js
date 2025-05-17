@@ -1,4 +1,4 @@
-export const menuOptions = [
+export const navOptions = [
     {
         label: "Início",
         path: "/"
