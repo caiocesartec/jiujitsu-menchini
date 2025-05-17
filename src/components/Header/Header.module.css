@@ -1,63 +1,59 @@
 .headerMain {
-    border-top: solid 2px #DF2320;
-    border-bottom: solid 2px #DF2320;
-    background-color: black;    
-    width: 100%;
-    height: auto;
-    display: block;
-    position: relative;
+  border-top: solid 2px #df2320;
+  border-bottom: solid 2px #df2320;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
 }
 
 .logoContainer {
-    position: absolute;
+  position: absolute;
 }
 .logo {
-    background-color: transparent;
-} 
-
-.containerOptionsMenu {
-    display: flex;
-    justify-content: space-around;
-    
-    nav {
-        width: 100%;
-        max-width: 700px;
-        ul {
-            display: flex;
-            justify-content:space-between; 
-            .menuHamburguer {
-                margin-left: 20px;
-                display: none;
-            }
-            li {
-                display: inline;
-                a {
-                    color: white;
-                    font-size: 20px;
-                    line-height: 50px;
-                    transition: color 0.5s ease-in-out;
-                    &:hover {
-                        color: #e14340;
-                    }
-                }
-            }
-        }
-    }
+  background-color: transparent;
 }
 
+.containerOptionsMenu {
+  display: flex;
+  justify-content: space-around;
 
-/* @media (max-width: 768px) {
-    .containerOptionsMenu {
-        display: block;
-        nav ul {
-            display: block;
-            .menuHamburguer {
-                display: block;
-            }
-            li {
-                display: none;
-            }
+  nav {
+    width: 100%;
+    max-width: 700px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      .menuHamburguer {
+        margin-left: 20px;
+        display: none;
+      }
+      li {
+        display: inline;
+        a {
+          color: white;
+          font-size: 20px;
+          line-height: 50px;
+          transition: color 0.5s ease-in-out;
+          &:hover {
+            color: #e14340;
+          }
         }
+      }
     }
-  
-} */
+  }
+}
+
+.containerOptionsMenuMobile {
+  display: block;
+  nav ul {
+    display: block;
+    .menuHamburguer {
+      display: block;
+    }
+    li {
+      display: block;
+    }
+  }
+}
