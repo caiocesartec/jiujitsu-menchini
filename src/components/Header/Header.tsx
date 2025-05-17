@@ -1,30 +1,37 @@
-import Image from "next/image";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Link from "next/link";
 import styles from "./Header.module.css"
 
 export default function Header() {
     return (
         <header className={styles.headerMain}>
             {/* logo */}
-            <div className={styles.logoContainer}>
+            {/* <div className={styles.logoContainer}>
                 <Image
                 className={styles.logo}
-                src="/logo_empresa.svg"
+                src="/logoAcademia.png"
                 alt="Next.js logo"
                 width={100}
                 height={100}
                 priority
                 />
-            </div>
+            </div> */}
             
             {/* opções do menu */}
-            <section>
-                <nav>
+            <section className={styles.containerOptionsMenu}>
+                <nav> 
                     <ul>
-                        <li>Home</li>
-                        <li>Sobre</li>
-                        <li>Projeto Faixinha Preta</li>
-                        <li>Equipe</li>
-                        <li>Contato</li>
+                        <li className={styles.menuHamburguer}>
+                            <Link href="/">
+                                <FontAwesomeIcon icon={faBars} /> 
+                            </Link>
+                        </li>
+                        <li><Link href="/">Inicio</Link></li>
+                        <li><Link href="/sobre">Sobre</Link></li>
+                        <li><Link href="/projeto-faixinha-preta">Projeto Faixinha Preta</Link></li>
+                        <li><Link href="/equipe">Equipe</Link></li>
+                        <li><Link href="/contato">Contato</Link></li>
                     </ul>
                 </nav>
             </section>
