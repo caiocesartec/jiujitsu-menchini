@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { navOptions } from '@/data/navOptions';
 
-const Menu = () => {
+export default function Menu() {
   return (
     <nav>
       <ul>
@@ -15,6 +15,4 @@ const Menu = () => {
       </ul>
     </nav>
   );
-};
-
-export default Menu;
+}
