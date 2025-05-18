@@ -46,14 +46,21 @@
 }
 
 .containerOptionsMenuMobile {
+  max-width: 100%;
   display: block;
-  nav ul {
-    display: block;
-    .menuHamburguer {
+  nav {
+    max-width: 100%;
+    ul {
       display: block;
-    }
-    li {
-      display: block;
+      li {
+        display: block;
+        text-align: center;
+      }
+      .mobileMenuIcon {
+        display: block;
+        text-align: right;
+        margin-right: 20px;
+      }
     }
   }
 }

@@ -2,44 +2,43 @@
 
 import styles from './Header.module.css';
 import HeaderOptions from '@/components/HeaderOptions/HeaderOptions';
-import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import useIsMobile from '@/hooks/useIsMobile';
+import { useEffect, useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
-  const [isMobile, setIsMobile] = useState(false);
+  const isMobile = useIsMobile(768);
+  const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const pathname = usePathname();
 
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
+  // Fecha o menu quando a rota mudar
   useEffect(() => {
-    const checkResolution = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+    setMenuOpen(false);
+  }, [pathname]);
 
-    checkResolution();
-    window.addEventListener('resize', checkResolution);
-
-    return () => {
-      window.removeEventListener('resize', checkResolution);
-    };
-  }, []);
-
-  const deskOrMobContainer = `${styles.containerOptionsMenu} ${isMobile ? styles.containerOptionsMenuMobile : ''}`;
+  const deskOrMobContainer = `${styles.containerOptionsMenu} ${
+    isMobile ? styles.containerOptionsMenuMobile : ''
+  }`;
 
   return (
     <header className={styles.headerMain}>
-      {/* opções do menu */}
       <section className={deskOrMobContainer}>
         {isMobile && (
           <nav>
             <ul>
               <li className={styles.mobileMenuIcon}>
-                <a>
-                  <FontAwesomeIcon icon={faBars} />
+                <a onClick={toggleMenu}>
+                  <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
                 </a>
               </li>
             </ul>
           </nav>
         )}
-        <HeaderOptions />
+        {(!isMobile || menuOpen) && <HeaderOptions />}
       </section>
     </header>
   );
