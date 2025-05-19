@@ -1,0 +1,35 @@
+.mestreApresentation {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.mestreApresentationContatiner {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  .mestreBrunoImage {
+    /* border: solid 2px white; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    img {
+      width: 100%;
+      min-width: 370px;
+      height: auto;
+      padding-left: 40px;
+      padding-right: 20px;
+    }
+  }
+}
+
+.mestreBrunoText {
+  color: white;
+  padding-left: 20px;
+  padding-right: 40px;
+}

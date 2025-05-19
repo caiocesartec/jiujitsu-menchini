@@ -1,0 +1,24 @@
+.miniApresentation {
+  background-color: black;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.miniApresentationContainer {
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+}
+.miniApresentationImage {
+  width: 300px;
+  height: 300px;
+  margin-right: 30px;
+}
+.miniApresentationText {
+  color: white;
+  display: flex;
+  align-items: center;
+}

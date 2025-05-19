@@ -7,7 +7,7 @@ import styles from './Slider.module.css';
 
 export default function Slider() {
   return (
-    <>
+    <section className={styles.sliderPrincipal}>
       <Swiper
         spaceBetween={20}
         slidesPerView={1}
@@ -111,6 +111,6 @@ export default function Slider() {
         className="swiper-button-next swiper-button-next-custom"
         style={{ color: '#e14340' }}
       ></div>
-    </>
+    </section>
   );
 }
