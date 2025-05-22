@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import LogoPng from '../../../public/logoacademia.png';
 import styles from './MiniApresentation.module.css';
 
 export default function MiniApresentation() {
@@ -8,7 +7,7 @@ export default function MiniApresentation() {
       <section className={styles.miniApresentationContainer}>
         <Image
           className={styles.miniApresentationImage}
-          src={LogoPng}
+          src={'/logoacademia.png'}
           alt="Slide 1"
           width={400}
           height={400}
