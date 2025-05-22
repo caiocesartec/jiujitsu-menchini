@@ -1,0 +1,40 @@
+.sliderEmpresasParceiras {
+  position: relative;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  height: auto;
+}
+.mobSlider {
+  display: none;
+}
+.deskSlider,
+.mobSlider {
+  border-bottom: 10px solid #000000; /* ajuste a cor e espessura como quiser */
+  margin-bottom: 1rem; /* espaço opcional entre a imagem e o próximo elemento */
+}
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  transition: color 0.3s ease;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .mobSlider {
+    display: block;
+  }
+  .deskSlider {
+    display: none;
+  }
+}
