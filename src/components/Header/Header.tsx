@@ -26,8 +26,6 @@ export default function Header() {
 
   return (
     <header className={styles.headerMain}>
-      <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} />
-
       <section className={deskOrMobContainer}>
         {isMobile && (
           <nav>
