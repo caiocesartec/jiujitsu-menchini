@@ -1,10 +1,10 @@
 'use client';
 import styles from '@/styles/page.module.css';
-import MiniApresentation from '@/components/MiniApresentation/MiniApresentation';
-import MestreApresentation from '@/components/MestreApresentation/MestreApresentation';
-import BarDivide from '@/components/BarDivide/BarDivide';
-import FaixaPreta from './../../public/Faixas/FaixaPreta.png';
-import FaixaMarron from './../../public/Faixas/FaixaMarron.png';
+// import MiniApresentation from '@/components/MiniApresentation/MiniApresentation';
+// import MestreApresentation from '@/components/MestreApresentation/MestreApresentation';
+// import BarDivide from '@/components/BarDivide/BarDivide';
+// import FaixaPreta from './../../public/Faixas/FaixaPreta.png';
+// import FaixaMarron from './../../public/Faixas/FaixaMarron.png';
 // import EmpresasParceiras from '@/components/EmpresasParceiras/EmpresasParceiras';
 
 export default function Home() {
