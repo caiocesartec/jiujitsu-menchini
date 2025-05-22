@@ -5,7 +5,7 @@ import MestreApresentation from '@/components/MestreApresentation/MestreApresent
 import BarDivide from '@/components/BarDivide/BarDivide';
 import FaixaPreta from './../../public/Faixas/FaixaPreta.png';
 import FaixaMarron from './../../public/Faixas/FaixaMarron.png';
-import EmpresasParceiras from '@/components/EmpresasParceiras/EmpresasParceiras';
+// import EmpresasParceiras from '@/components/EmpresasParceiras/EmpresasParceiras';
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         />
         <MestreApresentation />
         <BarDivide titleBar="Quem Acredita no Nosso Trabalho" imgPath={FaixaMarron} />
-        <EmpresasParceiras />
+        {/* <EmpresasParceiras /> */}
       </main>
     </>
   );
