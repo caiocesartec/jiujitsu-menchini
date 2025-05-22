@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="pt-br" className={anton.className}>
       <body>
         <Header />
-        {children}
+        {/* {children} */}
       </body>
     </html>
   );
