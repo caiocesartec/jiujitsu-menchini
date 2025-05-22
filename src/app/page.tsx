@@ -11,13 +11,13 @@ export default function Home() {
   return (
     <>
       <main className={styles.page}>
-        <MiniApresentation />
+        {/* <MiniApresentation />
         <BarDivide
           titleBar="Venha fazer parte da nossa familia - Mestre Bruno Menchini"
           imgPath={FaixaPreta}
         />
         <MestreApresentation />
-        <BarDivide titleBar="Quem Acredita no Nosso Trabalho" imgPath={FaixaMarron} />
+        <BarDivide titleBar="Quem Acredita no Nosso Trabalho" imgPath={FaixaMarron} /> */}
         {/* <EmpresasParceiras /> */}
       </main>
     </>
