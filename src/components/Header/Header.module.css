@@ -26,6 +26,7 @@
     ul {
       display: flex;
       justify-content: space-between;
+      width: 100%;
       .menuHamburguer {
         margin-left: 20px;
         display: none;
