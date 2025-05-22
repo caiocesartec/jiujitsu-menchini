@@ -24,6 +24,7 @@ export default function useIsMobile(
 
     const handleResize = () => {
       setIsMobile(mediaQuery.matches);
+      console.log(mediaQuery);
     };
 
     const debouncedResize = debounce(handleResize, debounceDelay);
